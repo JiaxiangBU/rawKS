@@ -8,7 +8,8 @@
 <!-- badges: end -->
 
 The goal of rawKS is to easily extract the raw KS statistics to plot and
-report.
+report. The Python version [pyks](https://github.com/JiaxiangBU/pyks) is
+hosted from GitHub.
 
 ## Installation
 
