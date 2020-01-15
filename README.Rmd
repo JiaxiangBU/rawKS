@@ -30,7 +30,7 @@ devtools::install_github("JiaxiangBU/rawKS")
 ```
 ## Example
 
-```{r example, eval=F}
+```{r example}
 library(tidyverse)
 library(rawKS)
 data("two_class_example_edited")
