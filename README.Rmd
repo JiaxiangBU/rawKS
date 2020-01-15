@@ -31,14 +31,10 @@ devtools::install_github("JiaxiangBU/rawKS")
 ## Example
 
 ```{r example, eval=F}
-library(rawKS)
-df <- ks_table(yhat, y)
-max(df$ks) # KS
 library(tidyverse)
-df %>% 
-    select(cutoff, tpr, fpr, ks) %>% 
-    gather(key, value, -cutoff) %>% 
-    ggplot(aes(x = cutoff, y = value, col = key)) +
-    geom_lines()
-# KS plot like ROC plot.
+library(rawKS)
+data("two_class_example_edited")
+max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
+ks_table(two_class_example_edited$yhat, two_class_example_edited$y) %>% 
+  ks_plot()
 ```

@@ -7,7 +7,9 @@
 #' @export
 #' @import ROCR
 #' @importFrom dplyr mutate
-#' @example \dontrun{max(ks_table(yhat,y)$ks)}
+#' @examples
+#' data("two_class_example_edited")
+#' max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
 ks_table <- function(yhat, y) {
     pred <- ROCR::prediction(yhat, y)
     perf <- ROCR::performance(pred, 'tpr', 'fpr')
@@ -20,4 +22,13 @@ ks_table <- function(yhat, y) {
         dplyr::mutate(cutoff = 1:nrow(.)/nrow(.)) %>%
         dplyr::mutate(ks = tpr - fpr)
     return(per_df2)
+}
+
+#' @export
+ks_plot <- function(df) {
+  df %>%
+      select(cutoff, tpr, fpr, ks) %>%
+      gather(key, value, -cutoff) %>%
+      ggplot(aes(x = cutoff, y = value, col = key)) +
+      geom_line()
 }
