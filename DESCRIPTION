@@ -1,5 +1,5 @@
 Package: rawKS
-Title: Easliy get TPR, FPR and KS statistic
+Title: Easily get TPR, FPR and KS statistic
 Version: 0.1.0
 Authors@R: 
     person(given = "Jiaxiang",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alex.lijiaxiang@foxmail.com",
            comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
-Description: Calcuate and plot the KS statistic with the prediction and target.
+Description: Calculate and plot the KS statistic with the prediction and target.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
