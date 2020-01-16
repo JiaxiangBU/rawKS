@@ -1,3 +1,6 @@
+globalVariables(c(".", "cutoff", "fpr", "key", "ks", "tpr", "value"))
+
+
 #' Get KS statistics
 #'
 #' Output a \code{data.frame} with inputs (y, yhat) and tpr, fpr and ks.
@@ -24,11 +27,16 @@ ks_table <- function(yhat, y) {
     return(per_df2)
 }
 
+#' Plot KS chart
+#' @param df data.frame created by \code{ks_table}
+#' @import dplyr
+#' @import tidyr
+#' @import ggplot2
 #' @export
 ks_plot <- function(df) {
   df %>%
-      select(cutoff, tpr, fpr, ks) %>%
-      gather(key, value, -cutoff) %>%
-      ggplot(aes(x = cutoff, y = value, col = key)) +
-      geom_line()
+      dplyr::select(cutoff, tpr, fpr, ks) %>%
+      tidyr::gather(key, value, -cutoff) %>%
+      ggplot2::ggplot(ggplot2::aes(x = cutoff, y = value, col = key)) +
+      ggplot2::geom_line()
 }
