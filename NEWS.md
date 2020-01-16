@@ -1,3 +1,5 @@
+# rawKS 0.1.0
+
 * update DESC, update imports, add dependencies, add the data `two_class_example_edited` intro.
 * update README.
 * update license, add the function of `ks_plot`, add examples, add sample data.
