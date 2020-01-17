@@ -7,13 +7,12 @@ Authors@R:
            role = c("aut", "cre"),
            email = "alex.lijiaxiang@foxmail.com",
            comment = c(ORCID = "https://orcid.org/0000-0003-3196-6492"))
-Description: The “K–S statistic” is a standard method to measure the model strength for 
-    credit risk scoring models. This package calculates the “K–S statistic” and 
+Description: The Kolmogorov-Smirnov (K-S) statistic is a standard method to measure the model strength for 
+    credit risk scoring models. This package calculates the K–S statistic and 
     plots the true-positive rate and false-positive rate to measure the model strength. 
     This package was written with the credit marketer, who uses risk models in 
     conjunction with his campaigns. The users could read more details from 
-    Thrasher (1992) <doi:10.1002/dir.4000060408> and a 
-    Python version 'pyks' <https://pypi.org/project/pyks/>.
+    Thrasher (1992) <doi:10.1002/dir.4000060408> and 'pyks' <https://pypi.org/project/pyks/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

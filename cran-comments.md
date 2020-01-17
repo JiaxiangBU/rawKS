@@ -9,3 +9,5 @@
 
 * Fix mis-spelling in Title
 * Write DOI in the right way
+* Use undirected quotes, Kolmogorov-Smirnov (K-S) statistic instead of “K–S statistic”
+* Quote softare names in the right way
