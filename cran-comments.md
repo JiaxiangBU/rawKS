@@ -7,7 +7,5 @@
 
 0 errors | 0 warnings | 3 note
 
-* Fix the title in the title case
-* Elaborate the description with references.
-* rawKS 0.1.0: OK
-https://builder.r-hub.io/status/rawKS_0.1.0.tar.gz-554a56ba8da1d3b62083dda510838105
+* Fix mis-spelling in Title
+* Write DOI in the right way

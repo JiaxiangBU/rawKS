@@ -1,5 +1,5 @@
 Package: rawKS
-Title: Easily Get TPR, FPR and KS Statistic
+Title: Easily Get True-Positive Rate and False-Positive Rate and KS Statistic
 Version: 0.1.0
 Authors@R: 
     person(given = "Jiaxiang",
@@ -12,7 +12,7 @@ Description: The “K–S statistic” is a standard method to measure the model
     plots the true-positive rate and false-positive rate to measure the model strength. 
     This package was written with the credit marketer, who uses risk models in 
     conjunction with his campaigns. The users could read more details from 
-    Thrasher (1992) <doi:https://doi.org/10.1002/dir.4000060408> and a 
+    Thrasher (1992) <doi:10.1002/dir.4000060408> and a 
     Python version 'pyks' <https://pypi.org/project/pyks/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
