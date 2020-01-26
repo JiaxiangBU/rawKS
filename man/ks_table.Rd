@@ -11,6 +11,9 @@ ks_table(yhat, y)
 
 \item{y}{numeric the target values.}
 }
+\value{
+The data frame containing tpr, fpr and ks.
+}
 \description{
 Output a \code{data.frame} with inputs (y, yhat) and tpr, fpr and ks.
 }

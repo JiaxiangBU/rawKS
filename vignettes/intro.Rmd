@@ -1,0 +1,26 @@
+---
+title: "intro"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(rawKS)
+```
+
+```{r example}
+data("two_class_example_edited")
+max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
+ks_table(two_class_example_edited$yhat, two_class_example_edited$y) %>% 
+  ks_plot()
+```

@@ -10,6 +10,7 @@ globalVariables(c(".", "cutoff", "fpr", "key", "ks", "tpr", "value"))
 #' @export
 #' @import ROCR
 #' @importFrom dplyr mutate
+#' @return The data frame containing tpr, fpr and ks.
 #' @examples
 #' data("two_class_example_edited")
 #' max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
@@ -32,7 +33,13 @@ ks_table <- function(yhat, y) {
 #' @import dplyr
 #' @import tidyr
 #' @import ggplot2
+#' @return The 'ggplot2' object
 #' @export
+#' @examples
+#' data("two_class_example_edited")
+#' max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
+#' ks_table(two_class_example_edited$yhat, two_class_example_edited$y) %>%
+#'   ks_plot()
 ks_plot <- function(df) {
   df %>%
       dplyr::select(cutoff, tpr, fpr, ks) %>%

@@ -9,6 +9,15 @@ ks_plot(df)
 \arguments{
 \item{df}{data.frame created by \code{ks_table}}
 }
+\value{
+The 'ggplot2' object
+}
 \description{
 Plot KS chart
+}
+\examples{
+data("two_class_example_edited")
+max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
+ks_table(two_class_example_edited$yhat, two_class_example_edited$y) \%>\%
+  ks_plot()
 }

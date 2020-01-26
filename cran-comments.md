@@ -5,9 +5,7 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 3 note
+0 errors | 0 warnings | 2 note
 
-* Fix mis-spelling in Title
-* Write DOI in the right way
-* Use undirected quotes, Kolmogorov-Smirnov (K-S) statistic instead of “K–S statistic”
-* Quote softare names in the right way
+* Add vignette.
+* Add examples and '@return' argument for the functions.

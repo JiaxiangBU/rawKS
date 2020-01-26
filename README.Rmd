@@ -30,11 +30,6 @@ devtools::install_github("JiaxiangBU/rawKS")
 ```
 ## Example
 
-```{r example}
-library(tidyverse)
-library(rawKS)
-data("two_class_example_edited")
-max(ks_table(two_class_example_edited$yhat, two_class_example_edited$y)$ks)
-ks_table(two_class_example_edited$yhat, two_class_example_edited$y) %>% 
-  ks_plot()
+```{r,child="vignettes/intro.Rmd"}
 ```
+
