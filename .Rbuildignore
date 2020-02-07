@@ -5,3 +5,4 @@
 ^data-raw$
 ^dev_history_r_pkg\.R$
 ^cran-comments\.md$
+^\.travis\.yml$

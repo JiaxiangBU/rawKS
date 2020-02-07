@@ -15,6 +15,8 @@ knitr::opts_chunk$set(
 # rawKS
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/rawKS)](https://CRAN.R-project.org/package=rawKS)
+[![Travis build status](https://travis-ci.org/JiaxiangBU/rawKS.svg?branch=master)](https://travis-ci.org/JiaxiangBU/rawKS)
 <!-- badges: end -->
 
 The goal of rawKS is to easily extract the raw KS statistics to plot and report.
