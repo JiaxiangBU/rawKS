@@ -1,13 +1,17 @@
 # rawKS 0.1.0
 
-* update DESC, update imports, add dependencies, add the data `two_class_example_edited` intro.
-* update README.
-* update license, add the function of `ks_plot`, add examples, add sample data.
-* add dependencies
-* add readme
-* added a function `ks_table`.
-* add license
-* add personal info
+* Update readme framework
+* Add badges.
+* Add vignette.
+* Add examples and '@return' argument for the functions.
+* Use undirected quotes, kolmogorov-smirnov (k-s) statistic instead of K–S statistic
+* Quote softare names in the right way
+* Fix mis-spelling in title
+* Write doi in the right way
+* Update cran comment with rhub check result.
+* Fix the title in the title case
+* Elaborate the description with references.
+* Add cran comments, update desc.
 
 # rawKS 0.0.0.9000
 
