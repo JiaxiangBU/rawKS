@@ -12,6 +12,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
+
 # rawKS
 
 <!-- badges: start -->
@@ -24,7 +25,13 @@ The Python version [pyks](https://github.com/JiaxiangBU/pyks) is hosted from Git
 
 ## Installation
 
-The development version from [GitHub](https://github.com/) with:
+You can install the released version of rawKS from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("rawKS")
+```
+
+And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -32,6 +39,9 @@ devtools::install_github("JiaxiangBU/rawKS")
 ```
 ## Example
 
+This is a basic example which shows you how to solve a common problem:
+
 ```{r,child="vignettes/intro.Rmd"}
 ```
 
+`r add2pkg::add_disclaimer("Jiaxiang Li")`

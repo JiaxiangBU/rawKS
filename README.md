@@ -17,7 +17,14 @@ hosted from GitHub.
 
 ## Installation
 
-The development version from [GitHub](https://github.com/) with:
+You can install the released version of rawKS from
+[CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("rawKS")
+```
+
+And the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -25,6 +32,8 @@ devtools::install_github("JiaxiangBU/rawKS")
 ```
 
 ## Example
+
+This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(rawKS)
@@ -44,3 +53,31 @@ ks_table(two_class_example_edited$yhat, two_class_example_edited$y) %>%
 ```
 
 <img src="man/figures/README-example-1.png" width="100%" />
+
+<h4 align="center">
+
+**Code of Conduct**
+
+</h4>
+
+<h6 align="center">
+
+Please note that the `rawKS` project is released with a [Contributor
+Code of
+Conduct](https://github.com/JiaxiangBU/rawKS/blob/master/CODE_OF_CONDUCT.md).<br>By
+contributing to this project, you agree to abide by its terms.
+
+</h6>
+
+<h4 align="center">
+
+**License**
+
+</h4>
+
+<h6 align="center">
+
+MIT © [Jiaxiang
+Li](https://github.com/JiaxiangBU/rawKS/blob/master/LICENSE.md)
+
+</h6>
