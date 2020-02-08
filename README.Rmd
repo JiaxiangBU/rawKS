@@ -45,4 +45,23 @@ This is a basic example which shows you how to solve a common problem:
 ```{r,child="vignettes/intro.Rmd"}
 ```
 
+## Citations
+
+```{r include=FALSE}
+citations <- add2pkg::add_zenodo_citation("README.Rmd")
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Cite)
+```
+
+```{r echo=FALSE, results='asis'}
+cat(paste0("```BibTex\n",citations$BibTex,"\n```"))
+```
+
+```{r echo=FALSE, results='asis'}
+cat(citations$Comments)
+```
+
+
 `r add2pkg::add_disclaimer("Jiaxiang Li")`
